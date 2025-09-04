@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch - Lap Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <h1 class="stopwatch-title">STOPWATCH</h1>
+        
+        <div class="stopwatch-display" id="display">00:00:00.00</div>
+        
+        <div class="stopwatch-controls">
+            <button class="stopwatch-btn start-btn" id="startBtn">Start</button>
+            <button class="stopwatch-btn lap-btn" id="lapBtn" disabled>Lap</button>
+            <button class="stopwatch-btn reset-btn" id="resetBtn" disabled>Reset</button>
+        </div>
+        
+        <div class="laps-container">
+            <h3 class="laps-title">Laps</h3>
+            <div id="lapsList" class="no-laps">No laps recorded yet</div>
+        </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
